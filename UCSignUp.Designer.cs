@@ -33,14 +33,14 @@
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblUserNameSignup = new System.Windows.Forms.Label();
-            this.txtUserNameSignUp = new System.Windows.Forms.TextBox();
-            this.txtPasswordSignUp = new System.Windows.Forms.TextBox();
-            this.txtModifySignUp = new System.Windows.Forms.TextBox();
-            this.txtEmailSignUp = new System.Windows.Forms.TextBox();
             this.lblPasswordSignUp = new System.Windows.Forms.Label();
             this.lblModifySignUp = new System.Windows.Forms.Label();
             this.lblEmailSignUp = new System.Windows.Forms.Label();
-            this.btnSignUp = new System.Windows.Forms.Button();
+            this.txtUserNameSignUp = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPasswordSignUp = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtModifySignUp = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEmailSignUp = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogoLogin)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
@@ -87,45 +87,17 @@
             // 
             this.lblUserNameSignup.AutoSize = true;
             this.lblUserNameSignup.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserNameSignup.Location = new System.Drawing.Point(337, 211);
+            this.lblUserNameSignup.Location = new System.Drawing.Point(337, 224);
             this.lblUserNameSignup.Name = "lblUserNameSignup";
             this.lblUserNameSignup.Size = new System.Drawing.Size(92, 23);
             this.lblUserNameSignup.TabIndex = 22;
             this.lblUserNameSignup.Text = "UserName";
             // 
-            // txtUserNameSignUp
-            // 
-            this.txtUserNameSignUp.Location = new System.Drawing.Point(472, 210);
-            this.txtUserNameSignUp.Name = "txtUserNameSignUp";
-            this.txtUserNameSignUp.Size = new System.Drawing.Size(187, 22);
-            this.txtUserNameSignUp.TabIndex = 26;
-            // 
-            // txtPasswordSignUp
-            // 
-            this.txtPasswordSignUp.Location = new System.Drawing.Point(472, 267);
-            this.txtPasswordSignUp.Name = "txtPasswordSignUp";
-            this.txtPasswordSignUp.Size = new System.Drawing.Size(187, 22);
-            this.txtPasswordSignUp.TabIndex = 27;
-            // 
-            // txtModifySignUp
-            // 
-            this.txtModifySignUp.Location = new System.Drawing.Point(472, 325);
-            this.txtModifySignUp.Name = "txtModifySignUp";
-            this.txtModifySignUp.Size = new System.Drawing.Size(187, 22);
-            this.txtModifySignUp.TabIndex = 28;
-            // 
-            // txtEmailSignUp
-            // 
-            this.txtEmailSignUp.Location = new System.Drawing.Point(472, 384);
-            this.txtEmailSignUp.Name = "txtEmailSignUp";
-            this.txtEmailSignUp.Size = new System.Drawing.Size(187, 22);
-            this.txtEmailSignUp.TabIndex = 29;
-            // 
             // lblPasswordSignUp
             // 
             this.lblPasswordSignUp.AutoSize = true;
             this.lblPasswordSignUp.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPasswordSignUp.Location = new System.Drawing.Point(337, 267);
+            this.lblPasswordSignUp.Location = new System.Drawing.Point(337, 295);
             this.lblPasswordSignUp.Name = "lblPasswordSignUp";
             this.lblPasswordSignUp.Size = new System.Drawing.Size(85, 23);
             this.lblPasswordSignUp.TabIndex = 30;
@@ -135,7 +107,7 @@
             // 
             this.lblModifySignUp.AutoSize = true;
             this.lblModifySignUp.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModifySignUp.Location = new System.Drawing.Point(337, 325);
+            this.lblModifySignUp.Location = new System.Drawing.Point(337, 348);
             this.lblModifySignUp.Name = "lblModifySignUp";
             this.lblModifySignUp.Size = new System.Drawing.Size(68, 23);
             this.lblModifySignUp.TabIndex = 31;
@@ -145,21 +117,109 @@
             // 
             this.lblEmailSignUp.AutoSize = true;
             this.lblEmailSignUp.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmailSignUp.Location = new System.Drawing.Point(337, 384);
+            this.lblEmailSignUp.Location = new System.Drawing.Point(337, 415);
             this.lblEmailSignUp.Name = "lblEmailSignUp";
             this.lblEmailSignUp.Size = new System.Drawing.Size(54, 23);
             this.lblEmailSignUp.TabIndex = 32;
             this.lblEmailSignUp.Text = "Email";
             // 
+            // txtUserNameSignUp
+            // 
+            this.txtUserNameSignUp.BorderRadius = 20;
+            this.txtUserNameSignUp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserNameSignUp.DefaultText = "";
+            this.txtUserNameSignUp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserNameSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserNameSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserNameSignUp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserNameSignUp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserNameSignUp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUserNameSignUp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserNameSignUp.Location = new System.Drawing.Point(472, 211);
+            this.txtUserNameSignUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtUserNameSignUp.Name = "txtUserNameSignUp";
+            this.txtUserNameSignUp.PasswordChar = '\0';
+            this.txtUserNameSignUp.PlaceholderText = "";
+            this.txtUserNameSignUp.SelectedText = "";
+            this.txtUserNameSignUp.Size = new System.Drawing.Size(229, 48);
+            this.txtUserNameSignUp.TabIndex = 34;
+            // 
+            // txtPasswordSignUp
+            // 
+            this.txtPasswordSignUp.BorderRadius = 20;
+            this.txtPasswordSignUp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPasswordSignUp.DefaultText = "";
+            this.txtPasswordSignUp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPasswordSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPasswordSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPasswordSignUp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPasswordSignUp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPasswordSignUp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPasswordSignUp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPasswordSignUp.Location = new System.Drawing.Point(472, 280);
+            this.txtPasswordSignUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPasswordSignUp.Name = "txtPasswordSignUp";
+            this.txtPasswordSignUp.PasswordChar = '\0';
+            this.txtPasswordSignUp.PlaceholderText = "";
+            this.txtPasswordSignUp.SelectedText = "";
+            this.txtPasswordSignUp.Size = new System.Drawing.Size(229, 48);
+            this.txtPasswordSignUp.TabIndex = 35;
+            // 
+            // txtModifySignUp
+            // 
+            this.txtModifySignUp.BorderRadius = 20;
+            this.txtModifySignUp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtModifySignUp.DefaultText = "";
+            this.txtModifySignUp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtModifySignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtModifySignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtModifySignUp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtModifySignUp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtModifySignUp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtModifySignUp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtModifySignUp.Location = new System.Drawing.Point(472, 336);
+            this.txtModifySignUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtModifySignUp.Name = "txtModifySignUp";
+            this.txtModifySignUp.PasswordChar = '\0';
+            this.txtModifySignUp.PlaceholderText = "";
+            this.txtModifySignUp.SelectedText = "";
+            this.txtModifySignUp.Size = new System.Drawing.Size(229, 48);
+            this.txtModifySignUp.TabIndex = 36;
+            // 
+            // txtEmailSignUp
+            // 
+            this.txtEmailSignUp.BorderRadius = 20;
+            this.txtEmailSignUp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmailSignUp.DefaultText = "";
+            this.txtEmailSignUp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmailSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmailSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmailSignUp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmailSignUp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmailSignUp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmailSignUp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmailSignUp.Location = new System.Drawing.Point(472, 401);
+            this.txtEmailSignUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmailSignUp.Name = "txtEmailSignUp";
+            this.txtEmailSignUp.PasswordChar = '\0';
+            this.txtEmailSignUp.PlaceholderText = "";
+            this.txtEmailSignUp.SelectedText = "";
+            this.txtEmailSignUp.Size = new System.Drawing.Size(229, 48);
+            this.txtEmailSignUp.TabIndex = 37;
+            // 
             // btnSignUp
             // 
-            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignUp.Location = new System.Drawing.Point(472, 433);
+            this.btnSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnSignUp.Location = new System.Drawing.Point(553, 456);
             this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(122, 45);
-            this.btnSignUp.TabIndex = 33;
+            this.btnSignUp.Size = new System.Drawing.Size(65, 45);
+            this.btnSignUp.TabIndex = 38;
             this.btnSignUp.Text = "SignUp";
-            this.btnSignUp.UseVisualStyleBackColor = true;
             // 
             // UCSignUp
             // 
@@ -167,13 +227,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectFinalWF.Properties.Resources._5_dieu_can_biet_khi_thiet_ke_website_du_lich__1_;
             this.Controls.Add(this.btnSignUp);
-            this.Controls.Add(this.lblEmailSignUp);
-            this.Controls.Add(this.lblModifySignUp);
-            this.Controls.Add(this.lblPasswordSignUp);
             this.Controls.Add(this.txtEmailSignUp);
             this.Controls.Add(this.txtModifySignUp);
             this.Controls.Add(this.txtPasswordSignUp);
             this.Controls.Add(this.txtUserNameSignUp);
+            this.Controls.Add(this.lblEmailSignUp);
+            this.Controls.Add(this.lblModifySignUp);
+            this.Controls.Add(this.lblPasswordSignUp);
             this.Controls.Add(this.lblUserNameSignup);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -193,13 +253,13 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblUserNameSignup;
-        private System.Windows.Forms.TextBox txtUserNameSignUp;
-        private System.Windows.Forms.TextBox txtPasswordSignUp;
-        private System.Windows.Forms.TextBox txtModifySignUp;
-        private System.Windows.Forms.TextBox txtEmailSignUp;
         private System.Windows.Forms.Label lblPasswordSignUp;
         private System.Windows.Forms.Label lblModifySignUp;
         private System.Windows.Forms.Label lblEmailSignUp;
-        private System.Windows.Forms.Button btnSignUp;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserNameSignUp;
+        private Guna.UI2.WinForms.Guna2TextBox txtPasswordSignUp;
+        private Guna.UI2.WinForms.Guna2TextBox txtModifySignUp;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmailSignUp;
+        private Guna.UI2.WinForms.Guna2Button btnSignUp;
     }
 }
